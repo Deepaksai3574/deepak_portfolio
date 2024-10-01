@@ -1,0 +1,165 @@
+/* External Stylesheet */
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-image 0.5s ease;
+    background-image: url('https://img.freepik.com/free-vector/blue-black-abstract-background_1340-17012.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#validation-message {
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+#home {
+    background: url('https://img.freepik.com/free-vector/background-wave-minimalist-modern-style_483537-5220.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727740800&semt=ais_hybrid') no-repeat center center/cover;
+    color: white;
+}
+
+#mainImage {
+    transition: all 0.5s ease;
+    max-width: 200px;
+    border: 5px solid #007bff;
+}
+
+#mainImage:hover {
+    transform: scale(1.1);
+}
+
+#profileHeader {
+    display: none;
+    transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.858) !important;
+}
+
+#profileImage {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease;
+}
+
+/* Animations */
+.shrink {
+    width: 50px !important;
+    height: 50px !important;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* Dashboard styles */
+#dashboard {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#login, #contact, #todolist {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#login:hover, #contact:hover, #dashboard:hover, #todolist:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+#gallery .gallery-item {
+    width: 150px;
+    height: 150px;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #mainImage {
+        max-width: 150px;
+    }
+    
+    #gallery .gallery-item {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Todo list styles */
+.list-group-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-color: #007bff;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item .fas {
+    transition: transform 0.3s ease;
+}
+
+.list-group-item[aria-expanded="true"] .fas {
+    transform: rotate(180deg);
+}
+
+.collapse {
+    transition: all 0.3s ease;
+}
+
+.collapse p {
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 4px;
+}
+
+.lead {
+    color: black;
+}
+
+.progress {
+    height: 5px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+/* Add more custom styles as needed */
+.row > .col-md-3, .col-md-4, .col-md-2, .col-md-3 {
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .row {
+        margin: 0;
+    }
+}
